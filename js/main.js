@@ -58,20 +58,27 @@ function setTheme(theme) {
 }
 
 /* ===================================================================
-   2. NAVBAR SCROLL & ACTIVE LINK
+   2. NAVBAR SCROLL & ACTIVE LINK (THROTTLED & 60FPS SMOOTH)
    =================================================================== */
 function initNavbarScroll() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
 
+  let ticking = false;
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const isScrolled = window.scrollY > 20;
+        if (navbar.classList.contains('scrolled') !== isScrolled) {
+          navbar.classList.toggle('scrolled', isScrolled);
+        }
+        highlightNavOnScroll();
+        ticking = false;
+      });
+      ticking = true;
     }
-    highlightNavOnScroll();
-  });
+  }, { passive: true });
 }
 
 function highlightNavOnScroll() {
