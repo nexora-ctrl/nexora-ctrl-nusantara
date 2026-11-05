@@ -50,3 +50,4 @@ Website ini statis murni (Zero-Config) dan siap di-deploy secara instan di [Verc
 - **WhatsApp**: [0812-3001-1284](https://wa.me/6281230011284)
 - **Email**: nexora.suport.id@gmail.com
 - **Alamat**: Jl. Raya Tanjungsari No 115 Tanjungsari, Sumedang
+
