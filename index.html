@@ -230,6 +230,24 @@
 
           <!-- Hero Visual: Interactive Mockup Card Preview -->
           <div class="hero-visual">
+            <!-- Floating Micro Badges (Positioned outside card so never clipped!) -->
+            <div class="floating-badge chip-1">
+              <div class="chip-avatar"><i class="ti ti-bell-ringing"></i></div>
+              <div>
+                <div class="chip-text">✦ Pengajuan Baru Masuk!</div>
+                <div class="chip-sub">Cluster Acacia &bull; Tipe 36 (Baru saja)</div>
+              </div>
+            </div>
+
+            <div class="floating-badge chip-2">
+              <div class="chip-avatar" style="background: #10b981;"><i class="ti ti-shield-check"></i></div>
+              <div>
+                <div class="chip-text">Data PDP Terenkripsi</div>
+                <div class="chip-sub">End-to-End SSL 256-Bit Protection</div>
+              </div>
+            </div>
+
+            <!-- Main Preview Card -->
             <div class="hero-card-preview">
               <!-- Top Terminal Controls -->
               <div class="hero-card-header">
@@ -244,6 +262,18 @@
                 </div>
               </div>
 
+              <!-- Header Card Title & Growth Metric -->
+              <div class="hero-preview-top-bar">
+                <div>
+                  <span class="hero-preview-subtitle">DASHBOARD ANALITIK PROSPEK</span>
+                  <h3 class="hero-preview-title">Real-Time Lead Velocity</h3>
+                </div>
+                <div class="hero-growth-badge">
+                  <i class="ti ti-trending-up"></i>
+                  <span>+34.8% Bulan Ini</span>
+                </div>
+              </div>
+
               <!-- Mini KPI Showcase inside preview -->
               <div class="preview-kpi-grid">
                 <div class="preview-kpi-box">
@@ -251,7 +281,7 @@
                     <i class="ti ti-users-group"></i>
                   </div>
                   <div class="preview-kpi-text">
-                    <h4>300</h4>
+                    <h4>300+</h4>
                     <p>Total Leads Masuk</p>
                   </div>
                 </div>
@@ -287,6 +317,26 @@
                 </div>
               </div>
 
+              <!-- Live Mini Sparkline Chart Visual -->
+              <div class="preview-chart-row">
+                <div class="chart-label-wrap">
+                  <span>Tren Konversi Mingguan</span>
+                  <span class="chart-high">Puncak: 48 Prospek/Hari</span>
+                </div>
+                <svg class="preview-sparkline-svg" viewBox="0 0 380 50" fill="none">
+                  <defs>
+                    <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#00c0f3" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#0056e0" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M 0 42 Q 40 38 80 25 T 160 30 T 240 12 T 320 20 T 380 6 L 380 50 L 0 50 Z" fill="url(#sparkGrad)"/>
+                  <path d="M 0 42 Q 40 38 80 25 T 160 30 T 240 12 T 320 20 T 380 6" stroke="#00c0f3" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="380" cy="6" r="4" fill="#00c0f3"/>
+                  <circle cx="380" cy="6" r="8" fill="#00c0f3" fill-opacity="0.3"/>
+                </svg>
+              </div>
+
               <!-- Mini Funnel Breakdown -->
               <div class="preview-pipeline-mini">
                 <div class="pipeline-mini-header">
@@ -306,24 +356,6 @@
                   <div class="legend-item"><span class="legend-dot" style="background: #f59e0b"></span> Approval Bank (15%)</div>
                 </div>
               </div>
-
-              <!-- Floating Micro Badges -->
-              <div class="floating-badge chip-1">
-                <div class="chip-avatar"><i class="ti ti-bell-ringing"></i></div>
-                <div>
-                  <div class="chip-text">Pengajuan Baru Masuk!</div>
-                  <div class="chip-sub">Cluster Acacia - Tipe 36</div>
-                </div>
-              </div>
-
-              <div class="floating-badge chip-2">
-                <div class="chip-avatar" style="background: #10b981;"><i class="ti ti-shield-check"></i></div>
-                <div>
-                  <div class="chip-text">Data PDP Terenkripsi</div>
-                  <div class="chip-sub">SSL 256-Bit Protection</div>
-                </div>
-              </div>
-
             </div>
           </div>
 

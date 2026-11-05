@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
+  <defs>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0056e0" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#00c0f3" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0056e0" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Smooth Microchip / Circuit Traces -->
+  <path d="M 0 60 L 80 60 L 110 90 L 190 90 L 220 60 L 300 60" stroke="url(#lineGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 50 0 L 50 40 L 70 60" stroke="url(#lineGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 190 90 L 190 150 L 160 180 L 110 180" stroke="url(#lineGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 0 210 L 90 210 L 120 240 L 210 240 L 240 270 L 300 270" stroke="url(#lineGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 250 150 L 270 170 L 270 300" stroke="url(#lineGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 120 240 L 120 300" stroke="url(#lineGrad)" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Tech Nodes -->
+  <circle cx="80" cy="60" r="3" fill="#00c0f3" fill-opacity="0.25"/>
+  <circle cx="220" cy="60" r="3" fill="#0056e0" fill-opacity="0.25"/>
+  <circle cx="160" cy="180" r="3" fill="#00c0f3" fill-opacity="0.25"/>
+  <circle cx="90" cy="210" r="3" fill="#0056e0" fill-opacity="0.25"/>
+  <circle cx="210" cy="240" r="3.5" fill="#00c0f3" fill-opacity="0.3"/>
+  <circle cx="240" cy="270" r="2.5" fill="#0056e0" fill-opacity="0.25"/>
+
+  <!-- Code Binary Micro Accent Marks (Very soft opacity) -->
+  <text x="230" y="115" font-family="monospace" font-size="8" fill="#00c0f3" fill-opacity="0.12" letter-spacing="2">01010</text>
+  <text x="35" y="145" font-family="monospace" font-size="8" fill="#0056e0" fill-opacity="0.12" letter-spacing="2">NEXORA.SYS</text>
+  <text x="140" y="270" font-family="monospace" font-size="8" fill="#00c0f3" fill-opacity="0.12" letter-spacing="2">SSL_256</text>
+</svg>
